@@ -22,6 +22,8 @@ $(document).ready(function() {
     var firstDiv = parseInt($("input#firstDiv").val());
     var secondDiv = parseInt($("input#secondDiv").val());
     pingpong(countTo, firstDiv, secondDiv);
-    console.log(countArray);
+    countArray.forEach(function(list) {
+      $(".result").append("<li>" + list + "<li>");
+    });
   });
 });
