@@ -22,8 +22,8 @@ $(document).ready(function() {
     var firstDiv = parseInt($("input#firstDiv").val());
     var secondDiv = parseInt($("input#secondDiv").val());
     pingpong(countTo, firstDiv, secondDiv);
-    countArray.forEach(function(list) {
-      $(".result").append("<li>" + list + "<li>");
+    for (x = 0; x < countArray.length; x ++) {
+      $(".result").append("<li>" + countArray[x] + "</li>");
+    };
     });
   });
-});
