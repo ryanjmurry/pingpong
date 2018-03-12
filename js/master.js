@@ -23,13 +23,23 @@ $(document).ready(function() {
     var countTo = parseInt($("input#countTo").val());
     var firstDiv = parseInt($("input#firstDiv").val());
     var secondDiv = parseInt($("input#secondDiv").val());
-    pingpong(countTo, firstDiv, secondDiv);
-    $(".pingpongNum").text(firstDiv*secondDiv);
-    $(".pingNum").text(firstDiv);
-    $(".pongNum").text(secondDiv);
-    $(".surprise").show();
-    for (x = 0; x < countArray.length; x ++) {
-      $(".resultList").append("<li>" + countArray[x] + "</li>");
+    if (countTo >= 1 && firstDiv >=1 && secondDiv >=1) {
+      pingpong(countTo, firstDiv, secondDiv);
+      $(".pingpongNum").text(firstDiv*secondDiv);
+      $(".pingNum").text(firstDiv);
+      $(".pongNum").text(secondDiv);
+      $("form#numbers").hide();
+      $("button#submit").hide();
+      $(".result").show();
+      $(".surprise").show();
+      for (x = 0; x < countArray.length; x ++) {
+        $(".resultList").append("<li>" + countArray[x] + "</li>");
+      };
+    } else {
+      alert("Please enter a number greater than 0 for all three inputs");
     };
   });
+    $("button#rematch").click(function() {
+      location.reload();
+    });
 });

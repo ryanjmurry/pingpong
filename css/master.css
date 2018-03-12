@@ -2,8 +2,11 @@ body {
   background-color: darkgrey;
 }
 
-.surprise {
+.result {
   display: none;
+}
+
+.surprise {
   color: blue;
   font-size: 30px;
 }

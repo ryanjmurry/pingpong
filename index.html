@@ -15,23 +15,24 @@
       <form id="numbers">
         <div class="form-group">
           <label for="countTo">How Many Numers in the List?</label>
-          <input id="countTo" type="text">
+          <input id="countTo" type="number" min="1">
         </div>
         <div class="form-group">
           <label for="firstDiv">Numbers divisible by ____ will be replaced with "ping":</label>
-          <input id="firstDiv" type="text">
+          <input id="firstDiv" type="number" min="1">
         </div>
         <div class="form-group">
           <label for="secondDiv">Numbers divisible by ____ will be replaced with "pong":</label>
-          <input id="secondDiv" type="text">
+          <input id="secondDiv" type="number" min="1">
         </div>
-        <button type="submit" class="btn btn-danger">Ping Pong The Hell Out Of It!</button>
+        <button id="submit" type="submit" class="btn btn-warning">Ping Pong The Hell Out Of It!</button>
       </form>
       <br>
       <div class="result">
         <h2 class="surprise">Surprise!</h2>
         <h2 class="surprise"><span class="pingNum"></span> x <span class="pongNum"></span> = <span class="pingpongNum"></span></h2>
         <h2 class="surprise">Any number divisible by <span class= "pingpongNum"></span> was replaced with "pingpong"</h2>
+        <button id="rematch" class="btn btn-danger">Rematch!</button>
         <ul class="resultList">
       </div>
 
