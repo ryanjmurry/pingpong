@@ -1,4 +1,4 @@
-# Winter Olympic Suggester
+# Ping Pong Calculator
 
 #### Array and Looping Exercise for Epicodus, 03.12.2018
 
@@ -11,6 +11,20 @@ Create a web application that takes a number from a user and returns a range of 
 * Numbers divisible by a chosen number are replaced with "ping"
 * Numbers divisible by a second chosen number are replaced with "pong"
 * Numbers divisible by the product of the two numbers are replaced with "pingpong"
+
+## Specifications
+* It can count up to the provided number.
+  * Example Input: 10
+  * Example Output: [1,2,3,4,5,6,7,8,9,10]
+
+
+* It can return ping if a number in the list is divisible by a primary chosen value.
+* It can return pong if a number in the list is divisible by a secondary chosen value.
+* It can return ping and pong if a number in the list is divisible by both values.
+* It can return pingpng if a number in the list is divisible by the product of the two chosen values.
+  * Example Input: 2
+  * Example Input: 4
+  * Example Output: [1, "ping", 3, "ping and pong", 5, "ping", 7, "pingpong", 9, "ping"]
 
 ## Setup/Installation Requirements
 
