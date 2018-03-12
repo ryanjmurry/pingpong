@@ -24,6 +24,7 @@ $(document).ready(function() {
     var firstDiv = parseInt($("input#firstDiv").val());
     var secondDiv = parseInt($("input#secondDiv").val());
     pingpong(countTo, firstDiv, secondDiv);
+    $(".pingpongNum").text(firstDiv*secondDiv);
     $(".pingNum").text(firstDiv);
     $(".pongNum").text(secondDiv);
     $(".surprise").show();
