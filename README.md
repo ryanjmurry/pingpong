@@ -15,7 +15,7 @@ Create a web application that takes a number from a user and returns a range of 
 ## Specifications
 * It can count up to the provided number.
   * Example Input: 10
-  * Example Output: [1,2,3,4,5,6,7,8,9,10]
+  * Example Output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 * It can return "ping" if a number in the list is divisible by a primary chosen value.
@@ -33,9 +33,7 @@ Create a web application that takes a number from a user and returns a range of 
 
 ## Known Bugs
 
-* Multiple submits will not refresh the list and instead adds to the end.
-
-* If a user does not enter a number, there is no prompt that they need to.
+* None at this time.
 
 ## Support and contact details
 
