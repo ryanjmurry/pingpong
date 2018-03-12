@@ -1,12 +1,16 @@
 # Winter Olympic Suggester
 
-#### Javascript and JQuery Exercise for Epicodus, 02.25.2018
+#### Array and Looping Exercise for Epicodus, 03.12.2018
 
 #### By Ryan Murry
 
 ## Description
 
-This webpage will ask a user a set of questions and, based on their responses, suggest a set of Olympic games that would be best for them.
+Create a web application that takes a number from a user and returns a range of numbers from 1 to the chosen number with the following exceptions:
+
+* Numbers divisible by a chosen number are replaced with "ping"
+* Numbers divisible by a second chosen number are replaced with "pong"
+* Numbers divisible by the product of the two numbers are replaced with "pingpong"
 
 ## Setup/Installation Requirements
 
@@ -15,9 +19,9 @@ This webpage will ask a user a set of questions and, based on their responses, s
 
 ## Known Bugs
 
-* If user changes answers without refreshing page and another result is reached, it will not replace the current result, but instead, will place the new result below the previous one.
+* Multiple submits will not refresh the list and instead adds to the end.
 
-* If user does not enter name, document will be left with blanks in the form questions.
+* If a user does not enter a number, there is no prompt that they need to.
 
 ## Support and contact details
 
