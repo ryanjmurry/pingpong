@@ -4,6 +4,8 @@ function pingpong (countTo, firstDiv, secondDiv) {
   for (i = 1; i <= countTo; i ++) {
     if (i % (firstDiv*secondDiv) === 0) {
       countArray.push("pingpong");
+    } else if (i % firstDiv === 0 && i % secondDiv === 0) {
+      countArray.push("ping and pong");
     } else if (i % firstDiv === 0) {
       countArray.push("ping");
     } else if (i % secondDiv === 0) {
@@ -22,8 +24,11 @@ $(document).ready(function() {
     var firstDiv = parseInt($("input#firstDiv").val());
     var secondDiv = parseInt($("input#secondDiv").val());
     pingpong(countTo, firstDiv, secondDiv);
+    $(".pingNum").text(firstDiv);
+    $(".pongNum").text(secondDiv);
+    $(".surprise").show();
     for (x = 0; x < countArray.length; x ++) {
-      $(".result").append("<li>" + countArray[x] + "</li>");
+      $(".resultList").append("<li>" + countArray[x] + "</li>");
     };
-    });
   });
+});

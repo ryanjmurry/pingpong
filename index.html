@@ -10,26 +10,29 @@
   </head>
   <body>
     <div class="container">
-      <h1>Let's Play Some Number Ping Pong!</h1>
-      <h2>How this works:</h2>
-      <h3>You enter three numbers. The 1st number you give me tells me to generate a list from 1 to your number. From that list, I will change every number in it divisible by your 2nd number to "ping" and every number divisble by your 3rd number to "pong". As a bonus, I will change every number in your list divisible by the product of your 2nd and 3rd number to "pingpong".</h3>
+      <img class ="pingpong-img" src="pingpong.jpeg" alt="pingpong">
+      <h1>Let's Play!</h1>
       <form id="numbers">
         <div class="form-group">
-          <label for="countTo">Enter a number to generate a list to:</label>
+          <label for="countTo">How Many Numers in the List?</label>
           <input id="countTo" type="text">
         </div>
         <div class="form-group">
-          <label for="firstDiv">1st divisible test ... the "ping":</label>
+          <label for="firstDiv">Numbers divisible by ____ will be replaced with "ping":</label>
           <input id="firstDiv" type="text">
         </div>
         <div class="form-group">
-          <label for="secondDiv">2nd divisible test ... the "pong":</label>
+          <label for="secondDiv">Numbers divisible by ____ will be replaced with "pong":</label>
           <input id="secondDiv" type="text">
         </div>
-        <button type="submit" class="btn btn-warning">Ping Pong The Hell Out Of It!</button>
+        <button type="submit" class="btn btn-danger">Ping Pong The Hell Out Of It!</button>
       </form>
+      <br>
+      <div class="result">
+        <h2 class="surprise">Surprise! <span class="pingNum"></span> x <span class="pongNum"></span> = "pingpong"</h2>
+        <ul class="resultList">
+      </div>
 
-      <ul class = "result">
       </ul>
     </div>
   </body>
