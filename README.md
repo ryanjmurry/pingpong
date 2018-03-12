@@ -18,10 +18,10 @@ Create a web application that takes a number from a user and returns a range of 
   * Example Output: [1,2,3,4,5,6,7,8,9,10]
 
 
-* It can return ping if a number in the list is divisible by a primary chosen value.
-* It can return pong if a number in the list is divisible by a secondary chosen value.
-* It can return ping and pong if a number in the list is divisible by both values.
-* It can return pingpng if a number in the list is divisible by the product of the two chosen values.
+* It can return "ping" if a number in the list is divisible by a primary chosen value.
+* It can return "pong" if a number in the list is divisible by a secondary chosen value.
+* It can return "ping and pong" if a number in the list is divisible by both values.
+* It can return "pingpong" if a number in the list is divisible by the product of the two chosen values.
   * Example Input: 2
   * Example Input: 4
   * Example Output: [1, "ping", 3, "ping and pong", 5, "ping", 7, "pingpong", 9, "ping"]
